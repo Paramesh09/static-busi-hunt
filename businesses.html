@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse and search verified businesses on Busi Hunt. Filter by industry, discover companies and connect to grow your network." />
+  <meta name="theme-color" content="#2563eb" />
+  <title>Businesses — Busi Hunt</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============== HEADER ============== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" class="brand" aria-label="Busi Hunt home">
+          <span class="brand__mark">B</span>
+          <span class="brand__name">Busi<span>Hunt</span></span>
+        </a>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="about.html" class="nav__link">About</a></li>
+          <li><a href="businesses.html" class="nav__link active">Businesses</a></li>
+          <li><a href="events.html" class="nav__link">Events</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="nav__actions">
+          <a href="contact.html" class="btn btn-ghost">Sign in</a>
+          <a href="businesses.html" class="btn btn-primary">Join free</a>
+          <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-controls="nav-menu" aria-expanded="false">
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============== PAGE HERO ============== -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumbs reveal"><a href="index.html">Home</a> / Businesses</p>
+        <span class="eyebrow reveal">Directory</span>
+        <h1 class="reveal" data-delay="1">Discover verified businesses</h1>
+        <p class="reveal" data-delay="2">Search a curated directory of companies across industries and find your next partner, client or supplier.</p>
+      </div>
+    </section>
+
+    <!-- ============== LISTING ============== -->
+    <section class="section">
+      <div class="container">
+        <!-- Filters -->
+        <div class="filters reveal">
+          <div class="search-box">
+            <span class="icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+            </span>
+            <input type="search" id="biz-search" placeholder="Search by name or keyword…" aria-label="Search businesses" />
+          </div>
+          <div class="chip-group" role="group" aria-label="Filter by category">
+            <button class="chip active" data-filter="all">All</button>
+            <button class="chip" data-filter="Technology">Technology</button>
+            <button class="chip" data-filter="Finance">Finance</button>
+            <button class="chip" data-filter="Marketing">Marketing</button>
+            <button class="chip" data-filter="Design">Design</button>
+            <button class="chip" data-filter="Consulting">Consulting</button>
+            <button class="chip" data-filter="Hospitality">Hospitality</button>
+          </div>
+        </div>
+
+        <p class="text-muted reveal" style="font-size:var(--fs-sm);margin-bottom:var(--space-5);">
+          Showing <strong id="result-count">9</strong> businesses
+        </p>
+
+        <!-- Grid -->
+        <div class="grid grid-3" id="biz-grid">
+
+          <article class="card reveal" data-name="Nimbus Labs" data-category="Technology" data-tags="saas ai cloud software">
+            <div class="biz-card__banner" data-cat="Technology"><div class="biz-card__logo">NL</div></div>
+            <div class="biz-card__body">
+              <div class="biz-card__title"><h3>Nimbus Labs</h3></div>
+              <div class="biz-card__meta"><span class="tag tag--brand">Technology</span><span>· San Francisco, US</span></div>
+              <p class="biz-card__desc">Cloud-native SaaS studio helping startups ship AI products faster.</p>
+              <div class="biz-card__foot"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>4.9</span></span><a href="#" class="btn-link">Connect &rarr;</a></div>
+            </div>
+          </article>
+
+          <article class="card reveal" data-name="Vertex Capital" data-category="Finance" data-tags="investment advisory funding venture">
+            <div class="biz-card__banner" data-cat="Finance"><div class="biz-card__logo">VC</div></div>
+            <div class="biz-card__body">
+              <div class="biz-card__title"><h3>Vertex Capital</h3></div>
+              <div class="biz-card__meta"><span class="tag tag--brand">Finance</span><span>· London, UK</span></div>
+              <p class="biz-card__desc">Boutique advisory firm connecting founders with the right investors.</p>
+              <div class="biz-card__foot"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>4.8</span></span><a href="#" class="btn-link">Connect &rarr;</a></div>
+            </div>
+          </article>
+
+          <article class="card reveal" data-name="Bright Lane" data-category="Marketing" data-tags="growth branding ads agency">
+            <div class="biz-card__banner" data-cat="Marketing"><div class="biz-card__logo">BL</div></div>
+            <div class="biz-card__body">
+              <div class="biz-card__title"><h3>Bright Lane</h3></div>
+              <div class="biz-card__meta"><span class="tag tag--brand">Marketing</span><span>· Toronto, CA</span></div>
+              <p class="biz-card__desc">Full-service growth marketing agency for ambitious brands.</p>
+              <div class="biz-card__foot"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>4.7</span></span><a href="#" class="btn-link">Connect &rarr;</a></div>
+            </div>
+          </article>
+
+          <article class="card reveal" data-name="Pixel & Co" data-category="Design" data-tags="ux ui product brand studio">
+            <div class="biz-card__banner" data-cat="Design"><div class="biz-card__logo">PC</div></div>
+            <div class="biz-card__body">
+              <div class="biz-card__title"><h3>Pixel &amp; Co</h3></div>
+              <div class="biz-card__meta"><span class="tag tag--brand">Design</span><span>· Berlin, DE</span></div>
+              <p class="biz-card__desc">Product design studio crafting delightful digital experiences.</p>
+              <div class="biz-card__foot"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>5.0</span></span><a href="#" class="btn-link">Connect &rarr;</a></div>
+            </div>
+          </article>
+
+          <article class="card reveal" data-name="Apex Advisory" data-category="Consulting" data-tags="strategy management operations">
+            <div class="biz-card__banner" data-cat="Consulting"><div class="biz-card__logo">AA</div></div>
+            <div class="biz-card__body">
+              <div class="biz-card__title"><h3>Apex Advisory</h3></div>
+              <div class="biz-card__meta"><span class="tag tag--brand">Consulting</span><span>· Singapore, SG</span></div>
+              <p class="biz-card__desc">Strategy consultants helping scale-ups enter new markets with confidence.</p>
+              <div class="biz-card__foot"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>4.6</span></span><a href="#" class="btn-link">Connect &rarr;</a></div>
+            </div>
+          </article>
+
+          <article class="card reveal" data-name="Harvest Table" data-category="Hospitality" data-tags="restaurant catering food events">
+            <div class="biz-card__banner" data-cat="Hospitality"><div class="biz-card__logo">HT</div></div>
+            <div class="biz-card__body">
+              <div class="biz-card__title"><h3>Harvest Table</h3></div>
+              <div class="biz-card__meta"><span class="tag tag--brand">Hospitality</span><span>· Melbourne, AU</span></div>
+              <p class="biz-card__desc">Premium catering and event hospitality for corporate gatherings.</p>
+              <div class="biz-card__foot"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>4.8</span></span><a href="#" class="btn-link">Connect &rarr;</a></div>
+            </div>
+          </article>
+
+          <article class="card reveal" data-name="DataForge" data-category="Technology" data-tags="data analytics engineering platform">
+            <div class="biz-card__banner" data-cat="Technology"><div class="biz-card__logo">DF</div></div>
+            <div class="biz-card__body">
+              <div class="biz-card__title"><h3>DataForge</h3></div>
+              <div class="biz-card__meta"><span class="tag tag--brand">Technology</span><span>· Austin, US</span></div>
+              <p class="biz-card__desc">Data engineering platform turning raw events into business insight.</p>
+              <div class="biz-card__foot"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>4.7</span></span><a href="#" class="btn-link">Connect &rarr;</a></div>
+            </div>
+          </article>
+
+          <article class="card reveal" data-name="Meridian Partners" data-category="Finance" data-tags="accounting tax wealth advisory">
+            <div class="biz-card__banner" data-cat="Finance"><div class="biz-card__logo">MP</div></div>
+            <div class="biz-card__body">
+              <div class="biz-card__title"><h3>Meridian Partners</h3></div>
+              <div class="biz-card__meta"><span class="tag tag--brand">Finance</span><span>· New York, US</span></div>
+              <p class="biz-card__desc">Accounting and wealth advisory tailored to founders and SMBs.</p>
+              <div class="biz-card__foot"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>4.5</span></span><a href="#" class="btn-link">Connect &rarr;</a></div>
+            </div>
+          </article>
+
+          <article class="card reveal" data-name="Loop Creative" data-category="Marketing" data-tags="content social video creative">
+            <div class="biz-card__banner" data-cat="Marketing"><div class="biz-card__logo">LC</div></div>
+            <div class="biz-card__body">
+              <div class="biz-card__title"><h3>Loop Creative</h3></div>
+              <div class="biz-card__meta"><span class="tag tag--brand">Marketing</span><span>· Dubai, AE</span></div>
+              <p class="biz-card__desc">Content and social studio producing scroll-stopping campaigns.</p>
+              <div class="biz-card__foot"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>4.9</span></span><a href="#" class="btn-link">Connect &rarr;</a></div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Empty state -->
+        <div class="no-results" id="no-results">
+          <h3 style="margin-bottom:.5rem;">No businesses found</h3>
+          <p>Try a different keyword or category filter.</p>
+        </div>
+
+        <div class="section-foot reveal">
+          <a href="contact.html" class="btn btn-primary btn-lg">List your business</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="index.html" class="brand">
+            <span class="brand__mark">B</span>
+            <span class="brand__name" style="color:#fff;">Busi<span>Hunt</span></span>
+          </a>
+          <p class="footer__about">
+            The Business Networking Connectivity Forum where companies and professionals connect, collaborate and grow.
+          </p>
+          <form id="newsletter-form" class="newsletter" novalidate>
+            <input type="email" placeholder="Your work email" aria-label="Email address" required />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+          <p class="newsletter-note text-muted" style="font-size:var(--fs-xs);margin-top:.5rem;">Monthly insights. No spam.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Platform</h4>
+          <a href="businesses.html">Businesses</a>
+          <a href="events.html">Events</a>
+          <a href="about.html">How it works</a>
+          <a href="contact.html">Pricing</a>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <a href="about.html">About us</a>
+          <a href="about.html">Careers</a>
+          <a href="contact.html">Contact</a>
+          <a href="contact.html">Press</a>
+        </div>
+        <div class="footer__col">
+          <h4>Resources</h4>
+          <a href="#">Help center</a>
+          <a href="#">Community</a>
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms of service</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span id="year">2026</span> Busi Hunt. All rights reserved.</p>
+        <div class="socials" aria-label="Social media">
+          <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34v-7.2H6v7.2h2.34zM7.17 9.9a1.36 1.36 0 1 0 0-2.72 1.36 1.36 0 0 0 0 2.72zM18 18.34v-3.95c0-2.11-.45-3.73-2.92-3.73-1.19 0-1.99.65-2.31 1.27h-.03v-1.08H10.5v7.2h2.34v-3.56c0-.94.18-1.85 1.34-1.85 1.15 0 1.16 1.07 1.16 1.91v3.5H18z"/></svg></a>
+          <a href="#" aria-label="X"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.5 8.6L23 22h-6.8l-5.3-6.9L4.8 22H1.7l8-9.2L1 2h7l4.8 6.3L18.9 2zm-2.4 18h1.9L7.6 4H5.6l10.9 16z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 1.62c-3.15 0-3.5.01-4.74.07-.9.04-1.39.19-1.71.32-.43.17-.74.37-1.06.69-.32.32-.52.63-.69 1.06-.13.32-.28.81-.32 1.71-.06 1.24-.07 1.59-.07 4.74s.01 3.5.07 4.74c.04.9.19 1.39.32 1.71.17.43.37.74.69 1.06.32.32.63.52 1.06.69.32.13.81.28 1.71.32 1.24.06 1.59.07 4.74.07s3.5-.01 4.74-.07c.9-.04 1.39-.19 1.71-.32.43-.17.74-.37 1.06-.69.32-.32.52-.63.69-1.06.13-.32.28-.81.32-1.71.06-1.24.07-1.59.07-4.74s-.01-3.5-.07-4.74c-.04-.9-.19-1.39-.32-1.71a2.85 2.85 0 0 0-.69-1.06 2.85 2.85 0 0 0-1.06-.69c-.32-.13-.81-.28-1.71-.32-1.24-.06-1.59-.07-4.74-.07zm0 2.76a5.46 5.46 0 1 1 0 10.92 5.46 5.46 0 0 1 0-10.92zm0 9a3.54 3.54 0 1 0 0-7.08 3.54 3.54 0 0 0 0 7.08zm5.68-9.23a1.28 1.28 0 1 1-2.55 0 1.28 1.28 0 0 1 2.55 0z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

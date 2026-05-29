@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get in touch with the Busi Hunt team. Questions, partnerships or press — we'd love to hear from you." />
+  <meta name="theme-color" content="#2563eb" />
+  <title>Contact — Busi Hunt</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============== HEADER ============== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" class="brand" aria-label="Busi Hunt home">
+          <span class="brand__mark">B</span>
+          <span class="brand__name">Busi<span>Hunt</span></span>
+        </a>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="about.html" class="nav__link">About</a></li>
+          <li><a href="businesses.html" class="nav__link">Businesses</a></li>
+          <li><a href="events.html" class="nav__link">Events</a></li>
+          <li><a href="contact.html" class="nav__link active">Contact</a></li>
+        </ul>
+        <div class="nav__actions">
+          <a href="contact.html" class="btn btn-ghost">Sign in</a>
+          <a href="businesses.html" class="btn btn-primary">Join free</a>
+          <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-controls="nav-menu" aria-expanded="false">
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============== PAGE HERO ============== -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumbs reveal"><a href="index.html">Home</a> / Contact</p>
+        <span class="eyebrow reveal">Get in touch</span>
+        <h1 class="reveal" data-delay="1">Let's talk business</h1>
+        <p class="reveal" data-delay="2">Questions, partnership ideas or press enquiries — our team usually replies within one business day.</p>
+      </div>
+    </section>
+
+    <!-- ============== CONTACT ============== -->
+    <section class="section">
+      <div class="container">
+        <div class="split" style="align-items:flex-start;">
+
+          <!-- Info column -->
+          <div class="reveal">
+            <span class="eyebrow">Contact details</span>
+            <h2 style="margin:var(--space-3) 0 var(--space-5);">We're here to help</h2>
+
+            <div class="contact-info">
+              <div class="value">
+                <div class="value__icon">&#9993;</div>
+                <div><h3>Email us</h3><p>hello@busihunt.com</p><p>support@busihunt.com</p></div>
+              </div>
+              <div class="value">
+                <div class="value__icon">&#128222;</div>
+                <div><h3>Call us</h3><p>+1 (555) 014-2300</p><p>Mon–Fri, 9am–6pm</p></div>
+              </div>
+              <div class="value">
+                <div class="value__icon">&#128205;</div>
+                <div><h3>Visit us</h3><p>500 Market Street, Suite 12</p><p>San Francisco, CA 94105</p></div>
+              </div>
+              <div class="value">
+                <div class="value__icon">&#128172;</div>
+                <div><h3>Live chat</h3><p>Available in-app for members</p><p>Avg. response under 5 min</p></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form column -->
+          <div class="form-card reveal" data-delay="2">
+            <h2 style="font-size:var(--fs-lg);margin-bottom:var(--space-2);">Send us a message</h2>
+            <p class="text-muted" style="font-size:var(--fs-sm);margin-bottom:var(--space-5);">Fill in the form and we'll get back to you shortly.</p>
+
+            <div class="form-success" id="form-success" role="status">
+              <span>&#9989;</span>
+              <span>Thanks! Your message has been sent — we'll be in touch soon.</span>
+            </div>
+
+            <form id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="field">
+                  <label for="name">Full name</label>
+                  <input type="text" id="name" name="name" placeholder="Jane Doe" autocomplete="name" />
+                  <span class="error">Please enter your name (min. 2 characters).</span>
+                </div>
+                <div class="field">
+                  <label for="email">Email address</label>
+                  <input type="email" id="email" name="email" placeholder="jane@company.com" autocomplete="email" />
+                  <span class="error">Please enter a valid email address.</span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject">
+                  <option value="">Choose a topic…</option>
+                  <option>General enquiry</option>
+                  <option>List my business</option>
+                  <option>Partnerships</option>
+                  <option>Press &amp; media</option>
+                  <option>Technical support</option>
+                </select>
+                <span class="error">Please choose a subject.</span>
+              </div>
+
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell us how we can help…"></textarea>
+                <span class="error">Please enter a message (min. 10 characters).</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block btn-lg">Send message</button>
+              <p class="text-muted text-center" style="font-size:var(--fs-xs);margin-top:var(--space-3);">
+                By submitting, you agree to our terms and privacy policy.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== FAQ ============== -->
+    <section class="section section--soft">
+      <div class="container narrow">
+        <div class="section-head reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>Frequently asked questions</h2>
+        </div>
+        <div class="grid" style="gap:var(--space-4);">
+          <div class="feature reveal" data-delay="1" style="padding:var(--space-5);">
+            <h3 style="margin-bottom:var(--space-2);">Is Busi Hunt free to join?</h3>
+            <p>Yes — creating a profile and browsing the directory is completely free. Premium plans add advanced tools for teams.</p>
+          </div>
+          <div class="feature reveal" data-delay="2" style="padding:var(--space-5);">
+            <h3 style="margin-bottom:var(--space-2);">How are businesses verified?</h3>
+            <p>Every listing goes through a lightweight verification step so members can connect with confidence.</p>
+          </div>
+          <div class="feature reveal" data-delay="3" style="padding:var(--space-5);">
+            <h3 style="margin-bottom:var(--space-2);">Can I host my own events?</h3>
+            <p>Absolutely. Members can create, promote and manage events directly from their dashboard.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="index.html" class="brand">
+            <span class="brand__mark">B</span>
+            <span class="brand__name" style="color:#fff;">Busi<span>Hunt</span></span>
+          </a>
+          <p class="footer__about">
+            The Business Networking Connectivity Forum where companies and professionals connect, collaborate and grow.
+          </p>
+          <form id="newsletter-form" class="newsletter" novalidate>
+            <input type="email" placeholder="Your work email" aria-label="Email address" required />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+          <p class="newsletter-note text-muted" style="font-size:var(--fs-xs);margin-top:.5rem;">Monthly insights. No spam.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Platform</h4>
+          <a href="businesses.html">Businesses</a>
+          <a href="events.html">Events</a>
+          <a href="about.html">How it works</a>
+          <a href="contact.html">Pricing</a>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <a href="about.html">About us</a>
+          <a href="about.html">Careers</a>
+          <a href="contact.html">Contact</a>
+          <a href="contact.html">Press</a>
+        </div>
+        <div class="footer__col">
+          <h4>Resources</h4>
+          <a href="#">Help center</a>
+          <a href="#">Community</a>
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms of service</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span id="year">2026</span> Busi Hunt. All rights reserved.</p>
+        <div class="socials" aria-label="Social media">
+          <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34v-7.2H6v7.2h2.34zM7.17 9.9a1.36 1.36 0 1 0 0-2.72 1.36 1.36 0 0 0 0 2.72zM18 18.34v-3.95c0-2.11-.45-3.73-2.92-3.73-1.19 0-1.99.65-2.31 1.27h-.03v-1.08H10.5v7.2h2.34v-3.56c0-.94.18-1.85 1.34-1.85 1.15 0 1.16 1.07 1.16 1.91v3.5H18z"/></svg></a>
+          <a href="#" aria-label="X"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.5 8.6L23 22h-6.8l-5.3-6.9L4.8 22H1.7l8-9.2L1 2h7l4.8 6.3L18.9 2zm-2.4 18h1.9L7.6 4H5.6l10.9 16z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 1.62c-3.15 0-3.5.01-4.74.07-.9.04-1.39.19-1.71.32-.43.17-.74.37-1.06.69-.32.32-.52.63-.69 1.06-.13.32-.28.81-.32 1.71-.06 1.24-.07 1.59-.07 4.74s.01 3.5.07 4.74c.04.9.19 1.39.32 1.71.17.43.37.74.69 1.06.32.32.63.52 1.06.69.32.13.81.28 1.71.32 1.24.06 1.59.07 4.74.07s3.5-.01 4.74-.07c.9-.04 1.39-.19 1.71-.32.43-.17.74-.37 1.06-.69.32-.32.52-.63.69-1.06.13-.32.28-.81.32-1.71.06-1.24.07-1.59.07-4.74s-.01-3.5-.07-4.74c-.04-.9-.19-1.39-.32-1.71a2.85 2.85 0 0 0-.69-1.06 2.85 2.85 0 0 0-1.06-.69c-.32-.13-.81-.28-1.71-.32-1.24-.06-1.59-.07-4.74-.07zm0 2.76a5.46 5.46 0 1 1 0 10.92 5.46 5.46 0 0 1 0-10.92zm0 9a3.54 3.54 0 1 0 0-7.08 3.54 3.54 0 0 0 0 7.08zm5.68-9.23a1.28 1.28 0 1 1-2.55 0 1.28 1.28 0 0 1 2.55 0z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
